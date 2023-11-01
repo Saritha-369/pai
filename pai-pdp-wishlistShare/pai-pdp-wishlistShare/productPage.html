@@ -1,0 +1,1623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <title>Pai Wishlist Share</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/css/navbar.css">
+    <link rel="stylesheet" href="assets/css/body.css">
+    <link rel="stylesheet" href="assets/css/mobile.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
+    <link rel='stylesheet' href='https://sachinchoolur.github.io/lightslider/dist/css/lightslider.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://db.onlinewebfonts.com/c/bb018e64d01355748d8ddc53553850b9?family=Cerebri+Sans+Regular" rel="stylesheet">
+
+
+
+  
+
+    <style>
+      @font-face {
+    font-family: "Cerebri Sans Regular";
+    src: url("https://db.onlinewebfonts.com/t/bb018e64d01355748d8ddc53553850b9.eot");
+    src: url("https://db.onlinewebfonts.com/t/bb018e64d01355748d8ddc53553850b9.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/bb018e64d01355748d8ddc53553850b9.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/bb018e64d01355748d8ddc53553850b9.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/bb018e64d01355748d8ddc53553850b9.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/bb018e64d01355748d8ddc53553850b9.svg#Cerebri Sans Regular")format("svg");
+}
+/* 
+  body{
+    font-family: "Cerebri Sans Regular";
+  } */
+    /* #lightSlider{
+      height:350px !important;
+    } */
+      
+    body{
+      overflow-x: hidden;
+        padding: 0;
+        margin: 0;
+        /* font-family: "Cerebri Sans Regular" !important; */
+    }
+
+
+
+.dropdown-menu {
+    animation: 0.5s slideup;
+  }
+  
+  @keyframes slideup {
+    from {
+      transform: translateY(10%);
+    }
+  
+    to {
+      transform: translateY(0);
+    }
+  }
+  
+
+  .top-nav{background-color: #ee801b;
+    border-top-left-radius: 20px;
+  border-top-right-radius: 20px;;
+}
+
+
+
+  .second-nav{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+  }
+.search-form{
+    position: relative;
+    width: 600px;
+}
+.search-input{
+    border-radius: 25px;
+    padding: 9px 48px;
+}
+
+
+.search-icon{
+    position: absolute;
+    right: 20px;
+    top: 3px;
+
+
+}
+.login-btn{
+    width: 100px;
+    border: none;
+    outline: none;
+    background: #3a3085;
+    border-radius: 20px;
+    padding: 6px 15px;
+color:white
+
+}
+.cart-icon {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+}
+.cart-count-list {
+    position: absolute;
+    top: 20px;
+    right: 28px;
+
+    background: #393085;
+    border: 2px solid #f0801c;
+    box-sizing: border-box;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color:white;
+}
+
+@media  screen and (min-width:991px) {
+  
+    .search-form{
+        flex-direction: column;
+    }
+    
+    
+}
+
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+body {
+    background-color: #eee;
+    font-family: "Poppins", sans-serif
+}
+
+.navbar{
+    /* background-color: #ee801b !important; */
+    color: #eee !important;
+}
+.card {
+    background-color: #fff;
+    padding: 14px;
+    border: none
+}
+
+.demo {
+    width: 100%
+}
+
+ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom: 0
+}
+
+li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor: pointer
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%
+}
+
+.stars i {
+    color: #ee801b
+}
+
+.stars span {
+    font-size: 13px
+}
+
+hr {
+    color: #d4d4d4
+}
+
+.badge {
+    padding: 5px !important;
+    padding-bottom: 6px !important
+}
+
+.badge i {
+    font-size: 10px
+}
+
+.profile-image {
+    width: 35px
+}
+
+.comment-ratings i {
+    font-size: 13px
+}
+
+.username {
+    font-size: 12px
+}
+
+.comment-profile {
+    line-height: 17px
+}
+
+.date span {
+    font-size: 12px
+}
+
+.p-ratings i {
+    color: #ee801b;
+    font-size: 12px
+}
+
+.btn-long {
+    padding-left: 35px;
+    padding-right: 35px
+}
+
+.buttons {
+    margin-top: 15px;
+}
+
+.buttons .btn {
+  border-radius: 25px;
+    height: 38px;
+}
+
+.buttons .cart {
+    border-color: #ee801b;
+    color: #ee801b;
+    width: 250px;
+}
+
+.buttons .cart:hover {
+    background-color: #ee801b !important;
+    color: #fff
+}
+
+.buttons .buy {
+    color: #fff;
+    background-color: #ee801b;
+    border-color: #ee801b;
+    width: 250px;
+}
+
+.buttons .buy:focus,
+.buy:active {
+    color: #fff;
+    background-color: #ee801b;
+    border-color: #ee801b;
+    box-shadow: none
+}
+
+.buttons .buy:hover {
+    color: #fff;
+    background-color: #ff6a20;
+   
+    border: none;
+
+}
+
+.buttons .wishlist {
+    background-color: #fff;
+    border-color: #ee801b
+}
+
+.buttons .wishlist:hover {
+    background-color: #ee801b;
+    border-color: #ee801b;
+    color: #fff
+}
+
+.buttons .wishlist:hover i {
+    color: #fff
+}
+
+.buttons .wishlist i {
+    color: #ee801b
+}
+
+.comment-ratings i {
+    color: #ee801b
+}
+
+.followers {
+    font-size: 9px;
+    color: #d6d4d4
+}
+
+.store-image {
+    width: 42px
+}
+
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px
+}
+
+.bullet-text {
+    font-size: 12px
+}
+
+.my-color {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    border: 2px solid #8f37aa;
+    display: inline-block;
+    color: #8f37aa;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-transform: uppercase;
+    transition: 0.5s all
+}
+
+label.radio .red {
+    background-color: red;
+    border-color: red
+}
+
+label.radio .blue {
+    background-color: blue;
+    border-color: blue
+}
+
+label.radio .green {
+    background-color: green;
+    border-color: green
+}
+
+label.radio .orange {
+    background-color: orange;
+    border-color: orange
+}
+
+label.radio input:checked+span {
+    color: #fff;
+    position: relative
+}
+
+label.radio input:checked+span::before {
+    opacity: 1;
+    content: '\2713';
+    position: absolute;
+    font-size: 13px;
+    font-weight: bold;
+    left: 4px
+}
+
+.card-body {
+    padding: 0.3rem 0.3rem 0.2rem
+}
+
+/* timer count */
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    z-index:-1;
+  }
+  .countdown-container{
+    display:flex;
+    text-align: center;
+  }
+  .big-text{
+    font-size:4rem;
+  }
+  .title{
+    margin:10px;
+    text-align:center;
+    color:rgb(31, 28, 28);
+    width:100%;
+    letter-spacing:1px;
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+  .title span{
+    display:block;
+    font-size:6rem;
+    letter-spacing:2rem;
+  }
+  .wrapper{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-wrap: wrap;
+    min-height:10vh;
+  }
+  .countdown-container > div{
+    margin:0 2rem;
+    text-align: center;
+    border:2px solid rgb(27, 25, 25);
+    padding:0px 20px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.5);
+    box-sizing: border-box;
+    color:rgb(27, 25, 25);
+    min-width:150px;
+  }
+
+  .btn-shop {
+      border-color: #ee801b;
+      color: #ee801b;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-size: large;
+      padding: 10px;
+      width: 100%;
+  }
+
+  .btn-shop:hover {
+      border: #ee801b;
+    background-color: #ee801b !important;
+    color: #fff
+}
+
+.btn-stick {
+    width: 50%;
+    border-color: #ee801b;
+    background-color: #ee801b;
+    color: #d6d4d4;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: large;
+    padding: 10px;
+    width: 100%;
+}
+
+.btn-stick:hover {
+  border: #ee801b;
+  background-color: #ee801b !important;
+  color: #fff
+}
+  @media (max-width:992px){
+    .countdown-container > div{
+      margin:0 1rem;
+    }
+  }
+  @media (max-width:767px){
+    .countdown-container{
+      flex-wrap: wrap;
+    }
+    .countdown-container > div{
+      margin:1rem auto;
+      max-width:150px;
+    }
+    .title{
+      font-size: 1.5rem;
+      line-height: 3.5rem;
+      margin:10px 0px;
+    }
+    .title span{
+      font-size: 2rem;
+      letter-spacing: 1rem;
+    }
+  }
+
+  .container .bcontent{
+      width: 100%;
+      height: 500px;
+  }
+
+  /*  Cards*/
+
+  .card-body .card-text{
+      margin-top: 10px;
+      padding: 10px;
+  }
+
+  .card-body .title{
+      padding: 5px;
+      text-align: left;
+  }
+
+  .card-body {
+      margin-left: 25px;
+  }
+
+  /* footer */
+
+  .footer-dark {
+    padding: 50px 0;
+    color: #f0f9ff;
+    background-color: #282d32
+}
+
+.footer-dark h3 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-weight: bold;
+    font-size: 16px
+}
+
+.footer-dark ul {
+    padding: 0;
+    list-style: none;
+    line-height: 1.6;
+    font-size: 14px;
+    margin-bottom: 0
+}
+
+.footer-dark ul a {
+    color: inherit;
+    text-decoration: none;
+    opacity: 0.6
+}
+
+.footer-dark ul a:hover {
+    opacity: 0.8
+}
+
+@media (max-width:767px) {
+    .footer-dark .item:not(.social) {
+        text-align: center;
+        padding-bottom: 20px
+    }
+}
+
+.footer-dark .item.text {
+    margin-bottom: 36px
+}
+
+@media (max-width:767px) {
+    .footer-dark .item.text {
+        margin-bottom: 0
+    }
+}
+
+.footer-dark .item.text p {
+    opacity: 0.6;
+    margin-bottom: 0
+}
+
+.footer-dark .item.social {
+    text-align: center
+}
+
+@media (max-width:991px) {
+    .footer-dark .item.social {
+        text-align: center;
+        margin-top: 20px
+    }
+}
+
+.footer-dark .item.social>a {
+    font-size: 20px;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.4);
+    margin: 0 8px;
+    color: #fff;
+    opacity: 0.75
+}
+
+.footer-dark .item.social>a:hover {
+    opacity: 0.9
+}
+
+.footer-dark .copyright {
+    text-align: center;
+    padding-top: 24px;
+    opacity: 0.3;
+    font-size: 13px;
+    margin-bottom: 0
+}
+.lSSlideOuter  img{
+  /* width: 63%; */
+  margin: 0 auto;
+}
+/* .lSSlideOuter .lSPager.lSGallery li {
+  width:35% !important;
+} */
+  
+.lSAction > .lSNext {
+  background-image: url(assets/img/rightarr.svg) !important;
+  /* background: #ee7f1a; */
+    opacity: 1;
+    
+    border-radius: 4px;
+}
+.lSAction > .lSPrev {
+  background-image: url(assets/img/leftarr.svg) !important;
+  /* background: #ee7f1a; */
+    opacity: 1;
+    
+    border-radius: 4px;
+}
+
+.lSSlideOuter .lSPager.lSGallery li {
+
+    border: 2px solid #ededed;
+}
+.lSSlideOuter .lSPager.lSGallery li.active {
+
+border: 2px solid orange;
+}
+.strike-price{
+  color: grey;
+    font-weight: 500;
+    font-size: 10;
+    font-size: 14px;
+}
+.price{
+  font-size: 19px;
+    color: #3a3085;
+    font-weight: 600;
+}
+.selectCatDiv{
+  /* margin-left: 15px; */
+    border-right: 1px solid #ffffff4a !important;
+    padding-inline: 19px !important;
+
+}
+.prod-title{
+  font-size: 25px;
+    font-weight: 600;
+
+}
+.about{
+  width: 80%;
+
+}
+.sharencompare{
+  color: #4d4b4bbd;
+    font-size: 14px;
+    font-weight: 600;
+}
+.sharencompare:hover{
+  color:#393085;
+}
+.total-sav{
+  color: #736e6e;
+    font-weight: 600;
+    font-size: 13px;
+}
+.saving-amnt{
+  color: green;
+  font-weight: 600;
+
+}
+.orange-text{
+  color:#ee801b;
+  font-weight: 600;
+}
+
+.ram-options {
+  display: flex;
+  border: 2px dashed #ecebeb;
+    display: flex;
+    justify-content: flex-start;
+  padding: 10px;
+  /* border: 1px solid #ccc; */
+  margin: 10px;
+}
+
+.ram-option {
+  cursor: pointer;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin-inline: 8px;
+  font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: grey;
+
+}
+
+.active {
+  color: #000000ab;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    border: 1px solid orange;
+    box-shadow: 1px 1px orange;
+}
+
+.selected-ram {
+  margin: 4px 10px;
+    font-weight: bold;
+    font-size: 13px;
+
+}
+.lightSlider.lsGrab > * {
+   
+    border: 1px solid #ededed;
+}
+
+.color-options {
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  border: 2px dashed #ecebeb;
+  margin: 10px;
+}
+.color-price{
+  font-size: 9px;
+}
+.color-option {
+  cursor: pointer;
+  /* padding: 5px 10px; */
+  border: 1px solid #ccc;
+  margin-inline: 8px;
+  font-size: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    color: grey;
+    width: 54px;
+}
+
+/* .active {
+  background-color: #007bff;
+  color: #fff;
+} */
+
+.selected-color {
+  text-align: center;
+  margin: 20px;
+  font-weight: bold;
+}
+
+.wishShare{
+  display: flex;
+    align-items: center;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    color: white;
+    background: #3a3085;
+    top: 30px;
+    overflow: a;
+    position: absolute;
+    z-index: 1;
+    right: 30px;
+}
+.breadcrumb-item a{
+  color: #3a3085 !important;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+.breadcrumb-item.active{
+  color: #ee801b !important;
+    font-size: 13px;
+    border: none;
+    box-shadow: none;
+
+    font-weight: 600;
+}
+
+.cart-wrap {
+  padding: 40px 0;
+  font-family: "Open Sans", sans-serif;
+}
+.main-heading {
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+.table-wishlist table {
+  width: 100%;
+}
+.table-wishlist thead {
+  border-bottom: 1px solid #e5e5e5;
+  margin-bottom: 5px;
+}
+.table-wishlist thead tr th {
+  padding: 8px 0 18px;
+  color: #484848;
+  font-size: 15px;
+  font-weight: 400;
+}
+.table-wishlist tr td {
+  padding: 25px 0;
+  vertical-align: middle;
+}
+.table-wishlist tr td .img-product {
+  width: 72px;
+  float: left;
+  margin-left: 8px;
+  margin-right: 31px;
+  line-height: 63px;
+}
+.table-wishlist tr td .img-product img {
+  width: 100%;
+}
+.table-wishlist tr td .name-product {
+  font-size: 15px;
+  color: #484848;
+  padding-top: 8px;
+  line-height: 24px;
+  width: 50%;
+}
+.table-wishlist tr td.price {
+  font-weight: 600;
+}
+.table-wishlist tr td .quanlity {
+  position: relative;
+}
+
+.total {
+  font-size: 24px;
+  font-weight: 600;
+  color: #8660e9;
+}
+.display-flex {
+  display: flex;
+}
+.align-center {
+  align-items: center;
+}
+.round-black-btn {
+  border-radius: 25px;
+  background: #212529;
+  color: #fff;
+  padding: 5px 20px;
+  display: inline-block;
+  border: solid 2px #212529;
+  transition: all 0.5s ease-in-out 0s;
+  cursor: pointer;
+  font-size: 14px;
+}
+.round-black-btn:hover,
+.round-black-btn:focus {
+  background: transparent;
+  color: #212529;
+  text-decoration: none;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.d-block {
+  display: block;
+}
+.custom-form label {
+  font-size: 14px;
+  line-height: 14px;
+}
+.pretty.p-default {
+  margin-bottom: 15px;
+}
+.pretty input:checked ~ .state.p-primary-o label:before,
+.pretty.p-toggle .state.p-primary-o label:before {
+  border-color: #8660e9;
+}
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-primary-o label:after {
+  background-color: #8660e9 !important;
+}
+.main-heading.border-b {
+  border-bottom: solid 1px #ededed;
+  padding-bottom: 15px;
+  margin-bottom: 20px !important;
+}
+.custom-form .pretty .state label {
+  padding-left: 6px;
+}
+.custom-form .pretty .state label:before {
+  top: 1px;
+}
+.custom-form .pretty .state label:after {
+  top: 1px;
+}
+.custom-form .form-control {
+  font-size: 14px;
+  height: 38px;
+}
+.custom-form .form-control:focus {
+  box-shadow: none;
+}
+.custom-form textarea.form-control {
+  height: auto;
+}
+.mt-40 {
+  margin-top: 40px !important;
+}
+.in-stock-box {
+  background: green;
+  font-size: 12px;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px 15px;
+  display: inline-block;
+  color: #fff;
+}
+.trash-icon {
+  font-size: 20px;
+  color: #212529;
+}
+.share-btns{
+    /* background: #ee801b;
+    color: white;
+    font-weight: 600;
+    border-radius: 9px;
+    font-size: 12px;
+    margin: 10px 0px; */
+    height: 56px;
+    background: #ee801b;
+    color: white;
+    font-weight: 600;
+    border-radius: 9px;
+    font-size: 12px;
+    margin: 2px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.share-btns:hover{
+    background-color: #777776;
+    color: white;
+}
+.wishTitle{
+    color: #4a4848;
+    font-weight: 600;
+    text-align: center;
+    font-size: 20px;
+    padding: 14px 0px;
+}
+.right-col{
+    border: 1px solid #00000036;
+    border-radius: 43px;
+    padding: 38px;
+
+}
+@media only screen and (max-width: 1264px) {
+  .share-btns{
+   
+    height: 50px;
+    background: #ee801b;
+    color: white;
+    font-weight: 600;
+    border-radius: 9px;
+    font-size: 12px;
+    margin: 0px 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.table-wishlist table {
+    width: 677px;
+}
+.cart-wrap {
+    padding: 14px 0;
+
+}
+}
+.msg-text{
+  font-size: 14px;
+}
+.table-wishlist{
+  
+  width: 100%; /* Set the maximum width for the table container */
+  overflow-x: auto; /* Enable horizontal scrolling when the table overflows the container */
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="main" id="main">
+      <div class="header-combo">
+        <nav class="navbar new-navbar navbar-expand-lg navbar-dark top-nav" style="background-color: #ee801b;">
+          <div class="container-fluid mx-3">
+            <a class="navbar-brand" href="#"><img src="assets/img/pai-logo.png" alt=""></a>
+        
+            <div>
+                <form class="d-flex search-form" role="search">
+                    <input class="form-control me-2 search-input" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+                    <span class=" search-icon" type="submit"><svg width="1.6em" height="2.4em" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                      
+                      </span>
+                  </form>
+            </div>
+            
+            
+            <div >
+             
+           
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <button class="login-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="16" viewBox="0 -960 960 960"fill="white" width="20"><path d="M480-120v-80h280v-560H480v-80h280q33 0 56.5 23.5T840-760v560q0 33-23.5 56.5T760-120H480Zm-80-160-55-58 102-102H120v-80h327L345-622l55-58 200 200-200 200Z"/></svg>
+                  Login
+                  </button>
+                </li>
+                <li class="cart-icon ms-3">
+                    <a href="/shop/cart/?r_token1=A0TJHK5R0SA" data-id="r_token1=A0TJHK5R0SA" class="show_cart" id="show-cart-header-section">
+                            <svg width="3em" fill="none" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="w-6 h-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+                              </svg>
+                              
+                        <span class="cart-count-list">0</span>
+                    </a>
+                </li>
+               
+              </ul>
+            </div>
+          </div>
+          
+        </nav>
+       
+        <div class="navBar" style="display: flex;">
+            <div class="Nav2leftPart" style="display: flex;align-items: center; width: 70%;">
+                <div class="navItems selectCatDiv" >
+                    <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="26"  fill="#fff" class="bi bi-list me-1" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                          </svg>
+                        </span>
+                        <span >
+                            Select Category
+                        </span>
+                    </a>
+                </div>
+                <div class="navItems">
+                    <span>
+                      <svg width="1.7em" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="me-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M12 3.75v16.5M2.25 12h19.5M6.375 17.25a4.875 4.875 0 004.875-4.875V12m6.375 5.25a4.875 4.875 0 01-4.875-4.875V12m-9 8.25h16.5a1.5 1.5 0 001.5-1.5V5.25a1.5 1.5 0 00-1.5-1.5H3.75a1.5 1.5 0 00-1.5 1.5v13.5a1.5 1.5 0 001.5 1.5zm12.621-9.44c-1.409 1.41-4.242 1.061-4.242 1.061s-.349-2.833 1.06-4.242a2.25 2.25 0 013.182 3.182zM10.773 7.63c1.409 1.409 1.06 4.242 1.06 4.242S9 12.22 7.592 10.811a2.25 2.25 0 113.182-3.182z" />
+                      </svg>
+                      Gift Cards
+                    </span>
+                </div>
+                <div class="navItems">
+                    <span>
+                      <svg width="1.7em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-wheel me-1"  viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+                        <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+                        <path d="M3 12h6"></path>
+                        <path d="M15 12h6"></path>
+                        <path d="M13.6 9.4l3.4 -4.8"></path>
+                        <path d="M10.4 14.6l-3.4 4.8"></path>
+                        <path d="M7 4.6l3.4 4.8"></path>
+                        <path d="M13.6 14.6l3.4 4.8"></path>
+                     </svg>Draw Results
+                    </span>
+                </div>
+                <div class="navItems">
+                    <span>
+                      <svg width="1.7em" xmlns="http://www.w3.org/2000/svg" class="me-1icon icon-tabler icon-tabler-receipt-tax"  viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M9 14l6 -6"></path>
+                        <circle cx="9.5" cy="8.5" r=".5" fill="currentColor"></circle>
+                        <circle cx="14.5" cy="13.5" r=".5" fill="currentColor"></circle>
+                        <path d="M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2"></path>
+                     </svg>Deal Zone
+                    </span>
+                </div>
+                <div class="navItems">
+                    <span>
+                      <svg width="1.7em" xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-location"  viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M21 3l-6.5 18a.55 .55 0 0 1 -1 0l-3.5 -7l-7 -3.5a.55 .55 0 0 1 0 -1l18 -6.5"></path>
+                     </svg>Store Locator
+                    </span>
+                </div>
+               
+                <div class="navItems">
+                    <span>
+                      <svg width="1.7em" xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-settings"  viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M10.325 4.317c.426 -1.756 2.924 -1.756 3.35 0a1.724 1.724 0 0 0 2.573 1.066c1.543 -.94 3.31 .826 2.37 2.37a1.724 1.724 0 0 0 1.065 2.572c1.756 .426 1.756 2.924 0 3.35a1.724 1.724 0 0 0 -1.066 2.573c.94 1.543 -.826 3.31 -2.37 2.37a1.724 1.724 0 0 0 -2.572 1.065c-.426 1.756 -2.924 1.756 -3.35 0a1.724 1.724 0 0 0 -2.573 -1.066c-1.543 .94 -3.31 -.826 -2.37 -2.37a1.724 1.724 0 0 0 -1.065 -2.572c-1.756 -.426 -1.756 -2.924 0 -3.35a1.724 1.724 0 0 0 1.066 -2.573c-.94 -1.543 .826 -3.31 2.37 -2.37c1 .608 2.296 .07 2.572 -1.065z"></path>
+                        <path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0"></path>
+                     </svg> Services
+                    </span>
+                </div>
+                <div class="navItems">
+                    <span>
+                      <svg width="1.7em" xmlns="http://www.w3.org/2000/svg" class="me-1 icon icon-tabler icon-tabler-brand-blogger" viewBox="0 0 24 24" stroke-width="2" stroke="white" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M8 21h8a5 5 0 0 0 5 -5v-3a3 3 0 0 0 -3 -3h-1v-2a5 5 0 0 0 -5 -5h-4a5 5 0 0 0 -5 5v8a5 5 0 0 0 5 5z"></path>
+                        <path d="M7 7m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h3a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-3a1.5 1.5 0 0 1 -1.5 -1.5z"></path>
+                        <path d="M7 14m0 1.5a1.5 1.5 0 0 1 1.5 -1.5h7a1.5 1.5 0 0 1 1.5 1.5v0a1.5 1.5 0 0 1 -1.5 1.5h-7a1.5 1.5 0 0 1 -1.5 -1.5z"></path>
+                     </svg>Blogs
+                    </span>
+                </div>
+               
+            </div>.
+        </div>
+      </div>
+
+        <div class="mobileNav">
+          <div class="topPart">
+            <div class="topLeft">
+              <div class="navItems" style="margin-left: 15px;">
+                <a href="javascript:void(0)" onclick="openMenu()">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-list" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                      </svg>
+                    </span>
+                </a>
+            </div>
+            <div class="hlogo"><img src="assets/img/pai-logo.png" alt=""></div>
+            </div>
+          <div class="topRight">
+            <div class="signInLink">
+              <a href="#">
+                Sign In
+              </a>
+            </div>
+            <div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#fff" class="bi bi-person" viewBox="0 0 16 16">
+                <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+              </svg>
+          </div>
+            <div style="display: flex;align-items: center;" onclick="cartCnt()">
+              <span class="cartCount" id="cartCount">0</span>
+              <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" fill="#fff" class="bi bi-cart" viewBox="0 0 16 16">
+                  <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+              </svg>
+          </div>
+          </div>
+          </div>
+
+          <div class="bottomPart">
+            <div class="searchbox" style="display: flex;">
+              <!-- <div class="filterDD" onfocusout="hideFilter()">
+                  <button onclick="showFilter(event)">All <span><svg xmlns="http://www.w3.org/2000/svg" width="10" height="10" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                      <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+                    </svg></span></button>
+                    <div class="filterDropDown" id="mobFilterDropDown">
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                          <a>All Categories</a>
+                          <a>Alexa Skills</a>
+                    </div>
+              </div> -->
+             
+                    <input class="form-control me-2 search-input" type="search" placeholder="Search for products, brands and more" aria-label="Search">
+                    <span class=" search-icon" type="submit"><svg width="1.6em" height="2.4em" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="black" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                      </svg>
+                      
+                      </span>
+                  </form>
+              </div>
+          </div>
+          </div>
+
+        </div>
+       
+       
+        
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">Offcanvas</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+           
+          </div>
+        </div>
+
+        <!-- <div class="menuBar">
+            <div class="menuCloseBtn"><button onclick="closeMenu()">X</button></div>
+            <div class="menuHead">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="#fff" class="bi bi-person-circle" viewBox="0 0 16 16">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                      </svg>
+                </span>
+                <span class="greet">Hello, sign in</span>
+            </div>
+            <div class="menuContent">
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+                <ul>
+                    <li>Trending</li>
+                    <li>Best Sellers</li>
+                    <li>New Releases</li>
+                    <li>Movers and Shakers</li>
+                </ul>
+                <hr>
+            </div>
+        </div> -->
+        <div class="overlay"></div>
+
+        <div class="body-content">
+          <nav aria-label="breadcrumb" class="mx-4 mt-2">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="#">Category</a></li>
+                <li class="breadcrumb-item"><a href="index.html">Product Detail</a></li>                <li class="breadcrumb-item active" aria-current="page">Wishlist Share</li>
+            </ol>
+        </nav>
+         
+          
+           <div class="container-fluid mt-2 mb-3">
+            <div class="row no-gutters">
+                <div class="col-md-12 mx-auto pr-2 position-relative">
+                 
+                    <div class="card  ">
+                        <h1 class="wishTitle"><svg width="2em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart-share me-2" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="grey" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M19.5 12.572l-.468 .464m-6.077 6.019l-.955 .945l-7.5 -7.428a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                            <path d="M16 22l5 -5" />
+                            <path d="M21 21.5v-4.5h-4.5" />
+                          </svg>My Wishlist</h1>
+                       <div class="row">
+                        <div class="col-md-12">
+                           
+	<div class="cart-wrap">
+		<div class="container">
+	        <div class="row">
+			    <div class="col-md-8">
+			        <div class="main-heading mb-10">Number of Selected Item: 0</div>
+
+			        <div class="table-wishlist">
+				        <table cellpadding="0" cellspacing="0" border="0" width="100%">
+				        	<thead>
+					        	<tr><th width="5%"></th>
+					        		<th width="45%">Product Name</th>
+					        		<th width="15%">Product Price</th>
+					        		<th width="15%">Stock Status</th>
+					        		<!-- <th width="15%"></th>
+					        		<th width="10%"></th> -->
+					        	</tr>
+					        </thead>
+					        <tbody>
+					        	<tr>
+                                    <td width="5%">
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+					        		<td width="45%">
+                                 
+					        			<div class="display-flex align-center">
+		                                    <div class="img-product">
+		                                        <img src="assets/img/black.jpg" alt="" class="mCS_img_loaded">
+		                                    </div>
+		                                    <div class="name-product">
+		                                        ViVO X60 (Shimmer Blue, 256 GB) (12 GB RAM)
+		                                    </div>
+	                                    </div>
+	                                </td>
+					        		<td width="15%" class="price"><svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+                                        <path d="M7 9l11 0"></path>
+                                     </svg>15989.00</td>
+					        		<td width="15%"><span class="in-stock-box">In Stock</span></td>
+
+					        		<td width="10%" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
+					        	</tr>
+					        	<tr>
+                                    <td width="5%">
+                                        <input type="checkbox" name="" id="">
+                                    </td>
+					        		<td width="45%">
+					        			<div class="display-flex align-center">
+		                                    <div class="img-product">
+		                                        <img src="assets/img/rainbow.jpg" alt="" class="mCS_img_loaded">
+		                                    </div>
+		                                    <div class="name-product">
+		                                       
+   OUT OF STOCK
+   NOTIFY ME
+Oppo A55 (6GB Ram, 128GB Storage) Rainbow Blue
+		                                    </div>
+	                                    </div>
+	                                </td>
+					        		<td width="15%" class="price"><svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+                                        <path d="M7 9l11 0"></path>
+                                     </svg>19989.00</td>
+					        		<td width="15%"><span class="in-stock-box">In Stock</span></td>
+
+					        		<td width="10%" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
+					        	</tr>
+                    <tr>
+                      <td width="5%">
+                          <input type="checkbox" name="" id="">
+                      </td>
+        <td width="45%">
+         
+                   
+          <div class="display-flex align-center">
+                          <div class="img-product">
+                              <img src="assets/img/black.jpg" alt="" class="mCS_img_loaded">
+                          </div>
+                          <div class="name-product">
+                              ViVO X60 (Shimmer Blue, 256 GB) (12 GB RAM)
+                          </div>
+                        </div>
+                    </td>
+        <td width="15%" class="price"><svg width="1em" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-currency-rupee" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                          <path d="M18 5h-11h3a4 4 0 0 1 0 8h-3l6 6"></path>
+                          <path d="M7 9l11 0"></path>
+                       </svg>20989.00</td>
+        <td width="15%"><span class="in-stock-box">In Stock</span></td>
+
+        <td width="10%" class="text-center"><a href="#" class="trash-icon"><i class="far fa-trash-alt"></i></a></td>
+      </tr>
+				        	</tbody>
+				        </table>
+				    </div>
+            
+			    </div>
+                <div class="col-md-4 right-col">
+                    <a href="mailto:?subject=Check%20out%20my%20wishlist&body=Here%20is%20my%20wishlist:%0A%0A[Your%20Wishlist%20Items]%0A%0AView%20it%20here:%20[Your%20Wishlist%20URL]" class="btn share-btns"><svg width="1.3em" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                      </svg>
+                      Share via Email</a>
+<br>
+<a href="https://www.facebook.com/sharer/sharer.php?u=[Your%20Wishlist%20URL]" class="btn share-btns"><svg fill="white" width="1.3em" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M14 13.5H16.5L17.5 9.5H14V7.5C14 6.47062 14 5.5 16 5.5H17.5V2.1401C17.1743 2.09685 15.943 2 14.6429 2C11.9284 2 10 3.65686 10 6.69971V9.5H7V13.5H10V22H14V13.5Z"></path></svg>Share on Facebook</a>
+<br>
+<button id="copyLinkButton" class="btn share-btns"><svg width="1.3em" fill="white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13.0605 8.11073L14.4747 9.52494C17.2084 12.2586 17.2084 16.6908 14.4747 19.4244L14.1211 19.778C11.3875 22.5117 6.95531 22.5117 4.22164 19.778C1.48797 17.0443 1.48797 12.6122 4.22164 9.87849L5.63585 11.2927C3.68323 13.2453 3.68323 16.4112 5.63585 18.3638C7.58847 20.3164 10.7543 20.3164 12.7069 18.3638L13.0605 18.0102C15.0131 16.0576 15.0131 12.8918 13.0605 10.9392L11.6463 9.52494L13.0605 8.11073ZM19.778 14.1211L18.3638 12.7069C20.3164 10.7543 20.3164 7.58847 18.3638 5.63585C16.4112 3.68323 13.2453 3.68323 11.2927 5.63585L10.9392 5.98941C8.98653 7.94203 8.98653 11.1079 10.9392 13.0605L12.3534 14.4747L10.9392 15.8889L9.52494 14.4747C6.79127 11.741 6.79127 7.30886 9.52494 4.57519L9.87849 4.22164C12.6122 1.48797 17.0443 1.48797 19.778 4.22164C22.5117 6.95531 22.5117 11.3875 19.778 14.1211Z"></path></svg>Copy Wishlist Link</button>
+<h2 class="wishTitle text-start mt-3">Send a Text Message</h2>
+<form id="messageForm">
+  <label for="message">Message:</label>
+  <input type="text" name="" id="" class="form-control msg-text  w-100 mt-3" placeholder="Enter Phone number">
+  <input type="text" id="message" class="form-control msg-text w-100 mt-3" name="message" placeholder="Type your message here" required>
+  <button type="submit" class="btn btn-secondary mt-3 msg-text" style="background-color: #3a3085;">Send</button>
+</form>
+                </div>
+			</div>
+		</div>
+	</div>
+
+                        </div>
+                     
+                      
+
+                    </div>
+                   
+                </div>
+               
+            </div>
+        </div>
+        </div>
+            <div class="allExceptCarou">
+                
+                <div>
+                </div>
+               
+                <div class="backToTop">
+                    <a href="#main" style="text-decoration:none;color:#fff">Back to Top</a>
+                </div>
+                <footer>
+                    <div class="footerPrim">
+                        <div class="PrimSubDiv" style="display: flex;">
+                            <div>
+                                <ul>
+                                    <li style="cursor: auto;">About</li>
+                                    <li>Pai Stories</li>
+                                    <li>Contact</li>
+                                    <li>About Us</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li style="cursor: auto;">Help</li>
+                                    <li>Cancellation and Return</li>
+                                    <li>eWaste Management</li>
+                                    <li>Shipping</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li style="cursor: auto;">Policy</li>
+                                    <li>Return Policy</li>
+                                    <li>Privacy</li>
+                                    <li>Terms of USe</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li  style="cursor: auto;">Social</li>
+                                    <li>Facebook</li>
+                                    <li>Twitter</li>
+                                    <li>Youtube</li>
+                                </ul>
+                               
+                            </div>
+                            <!-- <div>
+                              <ul>
+                                  <li  style="cursor: auto;">Social</li>
+                                  <li>Facebook</li>
+                                  <li>Twitter</li>
+                                  <li>Youtube</li>
+                              </ul>
+                          </div>
+                          <div>
+                            <ul>
+                                <li  style="cursor: auto;">Social</li>
+                                <li>Facebook</li>
+                                <li>Twitter</li>
+                                <li>Youtube</li>
+                            </ul>
+                        </div> -->
+                        </div>
+                    </div>
+                    <!-- <hr> -->
+                  
+
+                    <div class="footerSecond" style="background-color: #332d62; width: 100vw;">
+                        <div class="secSubDiv">
+                            <div class="subFooContent text-white">
+                                Pai International &copy;2023. All right reserved                             
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+        
+    </div>
+   
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js'></script>
+    <script src='https://sachinchoolur.github.io/lightslider/dist/js/lightslider.js'></script>
+   
+    <script src="assets/js/main.js"></script>
+    <script>
+document.getElementById('copyLinkButton').addEventListener('click', function () {
+    var wishlistURL = '[Your Wishlist URL]';
+    var textArea = document.createElement('textarea');
+    textArea.value = wishlistURL;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    alert('Wishlist link copied to clipboard.');
+});
+
+// Get the message form element
+const messageForm = document.getElementById('messageForm');
+
+// Add an event listener for form submission
+messageForm.addEventListener('submit', function (event) {
+  event.preventDefault(); // Prevent the default form submission behavior
+
+  // Get the user's input from the message input field
+  const messageInput = document.getElementById('message');
+  const message = messageInput.value;
+
+  // You can now send the message using AJAX, API, or any other method
+  // For demonstration purposes, we'll log the message to the console
+  console.log('Message sent:', message);
+
+  // Optionally, you can clear the input field after sending the message
+  messageInput.value = '';
+});
+    </script>
+</body>
+</html>
